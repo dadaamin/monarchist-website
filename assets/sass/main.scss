@@ -1389,19 +1389,18 @@
 	}
 
 	#menu {
-		@include vendor('transform', 'translateX(20em)');
+		@include vendor('transform', 'translateX(-15em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
 		-webkit-overflow-scrolling: touch;
-		background: _palette(accent1, bg);
+		background: #161A1D;
 		color: _palette(accent1, fg-bold);
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
 		padding: 3em 2em;
 		position: fixed;
-		right: 0;
 		top: 0;
-		width: 20em;
+		width: 15em;
 		z-index: _misc(z-index-base) + 2;
 
 		ul {
@@ -1445,8 +1444,8 @@
 			display: block;
 			height: 3em;
 			position: absolute;
-			right: 0;
 			top: 0;
+			right: 0;
 			vertical-align: middle;
 			width: 7em;
 		}
@@ -1507,7 +1506,6 @@
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
-			right: 0;
 			top: 0;
 
 			> ul {
