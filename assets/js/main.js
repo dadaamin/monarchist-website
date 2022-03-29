@@ -78,6 +78,6 @@
 				leave:		function() { $header.removeClass('alt'); }
 			});
 
-		}
+		} 
 
 })(jQuery);
