@@ -65,7 +65,7 @@
 				visibleClass: 'is-menu-visible'
 			});
 
-	// Header.
+/* 	// Header.
 		if ($banner.length > 0
 		&&	$header.hasClass('alt')) {
 
@@ -78,6 +78,6 @@
 				leave:		function() { $header.removeClass('alt'); }
 			});
 
-		} 
+		}  */
 
 })(jQuery);
