@@ -136,7 +136,7 @@ em, i {
 }
 
 p {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   letter-spacing: 0.225em;
   line-height: 1em;
-  margin: 0 0 1em 0;
+  margin: 0 0 1rem 0;
   text-transform: uppercase;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -204,16 +204,16 @@ sup {
 hr {
   border: 0;
   border-bottom: solid 2px #fff;
-  margin: 3em 0;
+  margin: 3rem 0;
 }
 hr.major {
-  margin: 4.5em 0;
+  margin: 4.5rem 0;
 }
 
 blockquote {
   border-left: solid 4px #fff;
   font-style: italic;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   padding: 0.5em 0 0.5em 2em;
 }
 
@@ -231,7 +231,7 @@ pre {
   -webkit-overflow-scrolling: touch;
   font-family: "Courier New", monospace;
   font-size: 0.9em;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
 }
 pre code {
   display: block;
@@ -1382,7 +1382,7 @@ header h6 + p {
   font-size: 0.9em;
 }
 header.major {
-  margin: 0 0 3.5em 0;
+  margin: 0 0 3.5rem 0;
 }
 header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
   border-bottom: solid 2px #fff;
@@ -1401,7 +1401,7 @@ header.major p {
 }
 @media screen and (max-width: 736px) {
   header.major {
-    margin: 0 0 2em 0;
+    margin: 0 0 2rem 0;
   }
 }
 @media screen and (max-width: 980px) {
@@ -1412,7 +1412,7 @@ header.major p {
 
 /* Form */
 form {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
 }
 
 label {
@@ -1420,7 +1420,7 @@ label {
   display: block;
   font-size: 0.9em;
   font-weight: 600;
-  margin: 0 0 1em 0;
+  margin: 0 0 1rem 0;
 }
 
 input[type=text],
@@ -1577,7 +1577,7 @@ input[type=radio] + label:before {
 .box {
   border-radius: 3px;
   border: solid 2px #fff;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   padding: 1.5em;
 }
 .box > :last-child,
@@ -1681,7 +1681,7 @@ input[type=radio] + label:before {
 }
 .image.fit {
   display: block;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   width: 100%;
 }
 .image.fit img {
@@ -1691,7 +1691,7 @@ input[type=radio] + label:before {
 /* List */
 ol {
   list-style: decimal;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   padding-left: 1.25em;
 }
 ol li {
@@ -1700,7 +1700,7 @@ ol li {
 
 ul {
   list-style: disc;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   padding-left: 1em;
 }
 ul li {
@@ -1720,7 +1720,7 @@ ul.alt li:first-child {
 }
 
 dl {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
 }
 
 /* Actions */
@@ -1730,11 +1730,11 @@ ul.actions {
   display: flex;
   cursor: default;
   list-style: none;
-  margin-left: -1em;
+  margin-left: -1rem;
   padding-left: 0;
 }
 ul.actions li {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 1rem;
   vertical-align: middle;
 }
 ul.actions.special {
@@ -1753,13 +1753,13 @@ ul.actions.stacked {
   margin-left: 0;
 }
 ul.actions.stacked li {
-  padding: 1em 0 0 0;
+  padding: 1rem 0 0 0;
 }
 ul.actions.stacked li:first-child {
   padding-top: 0;
 }
 ul.actions.fit {
-  width: calc(100% + 1em);
+  width: calc(100% + 1rem);
 }
 ul.actions.fit li {
   -moz-flex-grow: 1;
@@ -1788,7 +1788,7 @@ ul.actions.fit.stacked {
     flex-grow: 1;
     -ms-flex-shrink: 1;
     flex-shrink: 1;
-    padding: 1em 0 0 0;
+    padding: 1rem 0 0 0;
     text-align: center;
     width: 100%;
   }
@@ -1846,16 +1846,15 @@ ul.icons.major li {
 }
 
 table {
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   width: 100%;
 }
 table tbody tr {
-  border: solid 1px #fff;
   border-left: 0;
   border-right: 0;
-}
-table tbody tr:nth-child(2n+1) {
-  background-color: rgba(144, 144, 144, 0.25);
+  /* 				&:nth-child(2n + 1) {
+  					background-color: _palette(border-bg);
+  				} */
 }
 table td {
   padding: 0.75em 0.75em;
@@ -2027,7 +2026,7 @@ button,
   width: 100%;
 }
 .features li {
-  padding: 4em 4em 2em 6em;
+  padding: 4em 4em max(0.1rem, 4em - 2rem + 0) 6em;
   display: block;
   position: relative;
   text-align: left;
@@ -2085,19 +2084,19 @@ button,
 }
 @media screen and (max-width: 980px) {
   .features li {
-    padding: 3em 2em 1em 2em;
+    padding: 3em 2em max(0.1rem, 3em - 2rem + 0) 2em;
     text-align: center;
   }
   .features li:before {
     left: 0;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
     position: relative;
     top: 0;
   }
 }
 @media screen and (max-width: 736px) {
   .features li {
-    padding: 3em 0 1em 0;
+    padding: 3em 0 max(0.1rem, 3em - 2rem + 0) 0;
     background-color: transparent !important;
     border-top: solid 2px #fff;
     width: 100%;
@@ -2125,15 +2124,18 @@ button,
 }
 .spotlight .image img {
   border-radius: 0;
+  display: block;
   width: 100%;
+  height: auto;
 }
 .spotlight .content {
-  padding: 2em 4em 0.1em 4em;
+  padding: 2em 4em max(0.1rem, 2em - 2rem + 0) 4em;
   -moz-order: 2;
   -ms-order: 2;
   order: 2;
   max-width: 48em;
   width: 60%;
+  margin: auto;
 }
 .spotlight:nth-child(2n) {
   -moz-flex-direction: row-reverse;
@@ -2188,7 +2190,7 @@ button,
     width: 100%;
   }
   .spotlight .content {
-    padding: 4em 3em 2em 3em;
+    padding: 4em 3em max(0.1rem, 4em - 2rem + 0) 3em;
     max-width: none;
     text-align: center;
     width: 100%;
@@ -2196,13 +2198,13 @@ button,
 }
 @media screen and (max-width: 736px) {
   .spotlight .content {
-    padding: 3em 2em 1em 2em;
+    padding: 3em 2em max(0.1rem, 3em - 2rem + 0) 2em;
   }
 }
 
 /* Wrapper */
 .wrapper {
-  padding: 6em 0 4em 0;
+  padding: 6em 0 max(0.1rem, 6em - 2rem + 0) 0;
 }
 .wrapper > .inner {
   width: 60em;
@@ -2222,7 +2224,7 @@ button,
   padding: 0;
 }
 .wrapper.style1 {
-  background-color: #161A1D;
+  background-color: rgba(22, 26, 29, 0.7);
 }
 .wrapper.style2 {
   background-color: transparent;
@@ -2480,12 +2482,12 @@ button,
 }
 @media screen and (max-width: 980px) {
   .wrapper {
-    padding: 4em 3em 2em 3em;
+    padding: 4em 3em max(0.1rem, 4em - 2rem + 0) 3em;
   }
 }
 @media screen and (max-width: 736px) {
   .wrapper {
-    padding: 3em 2em 1em 2em;
+    padding: 3em 2em max(0.1rem, 3em - 2rem + 0) 2em;
   }
 }
 
@@ -2780,7 +2782,7 @@ body.is-menu-visible #menu {
 }
 @media screen and (max-width: 736px) {
   #banner {
-    padding: 7em 3em 5em 3em;
+    padding: 7em 3em max(0.1rem, 7em - 2rem + 0) 3em;
     height: auto;
     min-height: 0;
   }
@@ -2808,6 +2810,40 @@ body.is-preload #banner .more {
 }
 body.is-preload #banner:after {
   opacity: 1;
+}
+
+/* Video */
+#video {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  cursor: default;
+  height: 100vh;
+  min-height: 35em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+#video div.content {
+  position: absolute;
+  left: 37%;
+  bottom: 40px;
+}
+#video div.content p {
+  margin-bottom: 1rem;
+  font-size: 44px;
+  font-family: AT Triumvirate W03 Condensed;
+  color: #68c1ec;
+  font-weight: 500 !important;
+}
+#video div.content .button {
+  color: #68c1ec;
+  box-shadow: none;
 }
 
 /* CTA */
@@ -2857,7 +2893,7 @@ body.is-preload #banner:after {
 
 /* Main */
 #main > header {
-  padding: 12em 0 10em 0;
+  padding: 12em 0 max(0.1rem, 12em - 2rem + 0) 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/banner.png");
   background-attachment: fixed;
   background-position: center center;
@@ -2867,7 +2903,7 @@ body.is-preload #banner:after {
 }
 #main > header h2 {
   font-size: 1.75em;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5rem 0;
 }
 #main > header p {
   color: inherit;
@@ -2880,26 +2916,26 @@ body.is-preload #banner:after {
 }
 @media screen and (max-width: 1680px) {
   #main > header {
-    padding: 10em 0 8em 0;
+    padding: 10em 0 max(0.1rem, 10em - 2rem + 0) 0;
   }
 }
 @media screen and (max-width: 1280px) {
   #main > header {
-    padding: 8em 3em 6em 3em;
+    padding: 8em 3em max(0.1rem, 8em - 2rem + 0) 3em;
   }
 }
 @media screen and (max-width: 980px) {
   #main > header {
-    padding: 10em 3em 8em 3em;
+    padding: 10em 3em max(0.1rem, 10em - 2rem + 0) 3em;
   }
 }
 @media screen and (max-width: 736px) {
   #main > header {
-    padding: 5em 3em 3em 3em;
+    padding: 5em 3em max(0.1rem, 5em - 2rem + 0) 3em;
   }
   #main > header h2 {
     font-size: 1.25em;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -2909,9 +2945,10 @@ body.is-mobile #main > header {
 
 /* Footer */
 #footer {
-  padding: 6em 0 4em 0;
+  padding: 6em 0 max(0.1rem, 6em - 2rem + 0) 0;
   background-color: #1d242a;
   text-align: center;
+  padding-top: 1em;
 }
 #footer .icons {
   font-size: 1.25em;
@@ -2959,12 +2996,12 @@ body.is-mobile #main > header {
 }
 @media screen and (max-width: 980px) {
   #footer {
-    padding: 4em 3em 2em 3em;
+    padding: 4em 3em max(0.1rem, 4em - 2rem + 0) 3em;
   }
 }
 @media screen and (max-width: 736px) {
   #footer {
-    padding: 3em 2em 1em 2em;
+    padding: 3em 2em max(0.1rem, 3em - 2rem + 0) 2em;
   }
 }
 
@@ -3005,20 +3042,30 @@ body.is-mobile.landing #footer {
   margin: 0 0 0 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: rgba(22, 26, 29, 0.5);
+  height: 80vh;
+  background-color: rgba(22, 26, 29, 0.3);
+}
+.tiles header {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: 3em;
+}
+.tiles header h2 {
+  font-size: 44px;
+  font-family: AT Triumvirate W03 Condensed;
 }
 .tiles article {
   transition: transform 0.5s ease, opacity 0.5s ease;
   position: relative;
-  width: calc(20% - 4.5em);
-  margin: 4.5em 0 4.5em 4.5em;
+  width: calc(20% - 1.5em);
+  margin: 1.5em 0 1.5em 1.5em;
 }
 .tiles article > .image {
   transition: transform 0.5s ease;
   position: relative;
   display: block;
   width: 100%;
+  border-radius: 4px;
   overflow: hidden;
 }
 .tiles article > .image img {
@@ -3049,7 +3096,6 @@ body.is-mobile.landing #footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -3075,6 +3121,7 @@ body.is-mobile.landing #footer {
   width: 100%;
   height: 100%;
   padding: 1em;
+  border-radius: 4px;
   border-bottom: 0;
   text-align: center;
   text-decoration: none;
@@ -3088,6 +3135,12 @@ body.is-mobile.landing #footer {
 }
 .tiles article > a h2 {
   margin: 0;
+}
+.tiles article > a p.white {
+  color: black;
+}
+.tiles article > a p.black {
+  color: white;
 }
 .tiles article > a .content {
   transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -3138,29 +3191,29 @@ body.is-touch .tiles article .content {
 }
 @media screen and (max-width: 1280px) {
   .tiles {
-    margin: -2.25em 0 0 -2.25em;
+    margin: -0.75em 0 0 -0.75em;
   }
   .tiles article {
-    width: calc(33.3333333333% - 2.25em);
-    margin: 2.25em 0 0 2.25em;
+    width: calc(33.3333333333% - 0.75em);
+    margin: 0.75em 0 0 0.75em;
   }
 }
 @media screen and (max-width: 980px) {
   .tiles {
-    margin: -4.5em 0 0 -4.5em;
+    margin: -1.5em 0 0 -1.5em;
   }
   .tiles article {
-    width: calc(50% - 4.5em);
-    margin: 4.5em 0 0 4.5em;
+    width: calc(50% - 1.5em);
+    margin: 1.5em 0 0 1.5em;
   }
 }
 @media screen and (max-width: 736px) {
   .tiles {
-    margin: -2.25em 0 0 -2.25em;
+    margin: -0.75em 0 0 -0.75em;
   }
   .tiles article {
-    width: calc(50% - 2.25em);
-    margin: 2.25em 0 0 2.25em;
+    width: calc(50% - 0.75em);
+    margin: 0.75em 0 0 0.75em;
   }
   .tiles article:hover > .image {
     transform: scale(1.0);
@@ -3172,6 +3225,28 @@ body.is-touch .tiles article .content {
   }
   .tiles article {
     width: 100%;
-    margin: 2.25em 0 0 0;
+    margin: 0.75em 0 0 0;
   }
+}
+
+.shows table {
+  width: 100%;
+  border: none;
+  background-color: rgba(22, 26, 29, 0.7);
+}
+.shows tr {
+  text-align: center;
+  border: 1px solid rgba(188, 188, 188, 0.25);
+}
+.shows h2 {
+  text-align: center;
+}
+.shows header {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-top: 3em;
+}
+.shows header h2 {
+  font-size: 44px;
+  font-family: AT Triumvirate W03 Condensed;
 }/*# sourceMappingURL=main.css.map */

@@ -9,16 +9,29 @@
 	$duration: (
 		transitions:		0.2s,
 		menu:				0.5s,
-		fadein:				3s
+		fadein:				3s,
+		on-load:			0.75s,
+		on-scroll:			0.75s
 	);
 
 // Size.
 	$size: (
 		element-height:		2.75em,
-		element-margin:		2em,
+		element-margin:		2rem,
 		letter-spacing:		0.075em,
 		letter-spacing-alt:	0.225em,
-		gutter:				4.5em
+		gutter:				1.5em,
+		border-radius:		4px,
+		border-radius-alt:	0.5rem,
+		border-width:		1px,
+		inner:				64rem,
+		padding:			(
+			default:		7rem,
+			xlarge:			5rem,
+			large:			4rem,
+			medium:			3rem,
+			small:			2rem
+		)
 	);
 
 // Font.
@@ -116,5 +129,17 @@
 			border-bg:		rgba(0,0,0,0.0375),
 			border2:		#bfbfbf,
 			border2-bg:		rgba(0,0,0,0.1)
-		)
+		),
+
+		invert: (
+			bg:				#000000,
+			bg-alt:			#222222,
+			fg:				#ffffff,
+			fg-bold:		#ffffff,
+			fg-light:		#ffffff,
+			border:			rgba(255,255,255,1.0),
+			border-alt:		rgba(255,255,255,0.125),
+			border-bg:		rgba(255,255,255,0.125),
+			accent:			#47D3E5
+		),
 	);
