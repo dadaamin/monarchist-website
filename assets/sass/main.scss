@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import 'fontawesome-all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('//db.onlinewebfonts.com/c/ea7f8f171d63faf100ccd8a08773a656?family=ATTriumvirateCondensed');
 
 
 
@@ -1092,7 +1093,8 @@
 			p {
 				padding: 2em 1em 1em 2em;
 				hyphens: auto; 
-				text-align: justify
+				text-align: justify;
+				font-family: _font(family-fixed);
 			}
 		}
 
@@ -1603,7 +1605,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		font-family: 'AT Triumvirate W03 Condensed';
+		font-family: _font(family-fixed);
 
 		img {
 			@include vendor('transform', 'scale(1)');
@@ -1651,18 +1653,18 @@
 		div p {
 			margin: 6rem 0 0 0;
 			font-size: 34px;		
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: _font(family-fixed);
 		}
 
 		div p {
 			margin: 6rem 0 0 0;
 			font-size: 34px;		
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: _font(family-fixed);
 
 			@media only screen and (max-width: 600px) {
 				margin: 6rem 0 0 0;
 				font-size: 24px;		
-				font-family: AT Triumvirate W03 Condensed;
+				font-family: _font(family-fixed);
 			
 			}
 		}
@@ -1797,7 +1799,7 @@
 		p {
 			margin-bottom: 1rem;
 			font-size: 44px;		
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: _font(family-fixed);
 			color: #68c1ec;
 			font-weight: 500;
 		}
@@ -1806,6 +1808,7 @@
 			p {
 				font-size: 25px;
 				margin-bottom: 0;
+				font-family: _font(family-fixed);
 
 			}
 			
@@ -1815,6 +1818,7 @@
 		.button {
 			color: #68c1ec;
 			box-shadow: none;
+			font-family: _font(family-fixed);
 		}
 
 
@@ -2074,7 +2078,7 @@
 
 		h2 {
 			font-size: 44px;
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: _font(family-fixed);
 		}
 	}
 
@@ -2188,6 +2192,7 @@
 				line-height: 1.5;
 				margin-top: 0.35em;
 				opacity: 0;
+				font-family: _font(family-fixed);
 
 				> :last-child {
 					margin-bottom: 0;
@@ -2334,6 +2339,7 @@
 	tr {
 		text-align: center; 
 		border: 1px solid rgba(188,188,188,0.25);
+		font-family: _font(family-fixed);
 	}
 	h2 {
 		text-align: center;
@@ -2345,7 +2351,7 @@
 
 		h2 {
 			font-size: 44px;
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: _font(family-fixed);
 		}
 	}
 
