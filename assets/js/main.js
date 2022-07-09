@@ -10,7 +10,9 @@
 		$body = $('body'),
 		$wrapper = $('#page-wrapper'),
 		$banner = $('#banner'),
+		$spinner = $('#spinner'),
 		$header = $('#header');
+		$more = $('.more')
 
 	// Breakpoints.
 		breakpoints({
@@ -23,9 +25,16 @@
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
+			$body.removeClass('is-preload');
+			$spinner.css("display", "none"); 
+			
+		});
+
+		$more.on('transitionend', function(event) {
+			$('html').css({
+				'overflow': 'auto',
+				'height': 'auto'
+			  })
 		});
 
 	// Mobile?
