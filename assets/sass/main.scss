@@ -1791,12 +1791,7 @@
 		display: block;
 		margin: auto;
 
-		@media only screen and (max-width: 600px) {
-			-ms-transform: translate(-40%,0);
-			-moz-transform: translate(-40%,0);
-			-webkit-transform: translate(-40%,0);
-			transform: translate(-40%,0);
-		}
+		
 	}
 
 	div.content {
@@ -2033,25 +2028,22 @@
 			padding-top: 0;
 		}
 
-		#footer {
-			background-color: darken(transparentize(_palette(bg), 0.1), 8);
-		}
+		
+	@media only screen and (max-width: 320px) {
+		/* Small screen, non-retina */
+		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner_mobile_290.png"); }
+	}
+	@media only screen and (min-width: 321px) and (max-width: 540px) {
+		/* Medium screen, non-retina */
+		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner_mobile_540.png"); }
+	}
+	@media only screen and (min-width: 541) and (max-width: 811px) {
+		/* Medium screen, non-retina */
+		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner_mobile_810.png"); }
 	}
 
-	body.is-mobile {
-		&.landing {
-			
-			#banner,
-			.wrapper.style4 {
-				background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner.png");
-				background-position: center center;
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-
-			#footer {
-				background-color: darken(_palette(bg), 8);
-			}
+		#footer {
+			background-color: darken(transparentize(_palette(bg), 0.1), 8);
 		}
 	}
 

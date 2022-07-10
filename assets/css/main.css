@@ -2874,11 +2874,6 @@ body.is-preload #banner:after {
   display: block;
   margin: auto;
 }
-@media only screen and (max-width: 600px) {
-  #video video {
-    transform: translate(-40%, 0);
-  }
-}
 #video div.content {
   position: absolute;
   left: 50%;
@@ -3078,19 +3073,32 @@ body.landing #page-wrapper {
   background-size: cover;
   padding-top: 0;
 }
+@media only screen and (max-width: 320px) {
+  body.landing {
+    /* Small screen, non-retina */
+  }
+  body.landing #page-wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/banner_mobile_290.png");
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  body.landing {
+    /* Medium screen, non-retina */
+  }
+  body.landing #page-wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/banner_mobile_540.png");
+  }
+}
+@media only screen and (min-width: 541) and (max-width: 811px) {
+  body.landing {
+    /* Medium screen, non-retina */
+  }
+  body.landing #page-wrapper {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/banner_mobile_810.png");
+  }
+}
 body.landing #footer {
   background-color: rgba(29, 36, 42, 0.9);
-}
-
-body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/banner.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body.is-mobile.landing #footer {
-  background-color: #1d242a;
 }
 
 /* Tiles */
