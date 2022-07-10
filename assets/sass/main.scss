@@ -131,7 +131,6 @@
 		font-size: 15pt;
 		font-weight: _font(weight);
 		letter-spacing: _size(letter-spacing);
-		line-height: 1.65em;
 
 		@include breakpoint('<=xlarge') {
 			font-size: 13pt;
@@ -832,7 +831,6 @@
 	}
 
 	table {
-		margin: 0 0 _size(element-margin) 0;
 		width: 100%;
 
 		tbody {
@@ -1057,6 +1055,7 @@
 	.spotlight {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
+		padding-bottom: 1em;
 
 		.image {
 			@include vendor('order', '2');
@@ -1088,11 +1087,13 @@
 				padding: 2em 1em 1em 2em;
 				margin: 0 0 2em 0;
 				hyphens: auto; 
-				text-align: justify
+				text-align: justify;
+				line-height: 1.5;
 			}
 
 			td {
 				text-align: center;
+				padding-bottom: 0.3em;
 			}
 		}
 
@@ -2324,6 +2325,8 @@
 
 .shows {
 
+	padding-bottom: 5em;
+
 	table {
 		width: 80%;
 		border: none;
@@ -2342,6 +2345,10 @@
 	tr {
 		text-align: center; 
 		border: 1px solid rgba(188,188,188,0.25);
+	}
+	td {
+		padding: 0.5em;
+		font-weight: bold;
 	}
 	td.text-right {
 		text-align: right;
