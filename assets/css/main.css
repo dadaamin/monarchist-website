@@ -3133,7 +3133,6 @@ body.landing #footer {
   padding-bottom: 7em;
   justify-content: center;
   align-items: center;
-  background-color: rgba(22, 26, 29, 0.3);
 }
 .tiles header {
   flex: 0 0 100%;
