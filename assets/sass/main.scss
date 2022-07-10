@@ -1098,6 +1098,10 @@
 			}
 		}
 
+		.mobile {
+			display: none;
+		}
+
 		&:nth-child(2n) {
 			@include vendor('flex-direction', 'row-reverse');
 		}
@@ -1118,6 +1122,10 @@
 			.content {
 				width: 45%;
 			}
+
+			.mobile {
+				display: none;
+			}
 		}
 
 		@include breakpoint('<=medium') {
@@ -1129,6 +1137,9 @@
 
 			.image {
 				width: 100%;
+				img {
+					margin-bottom: 1em;
+				}
 			}
 
 			.content {
@@ -1137,11 +1148,26 @@
 				text-align: center;
 				width: 100%;
 			}
+
+			.desktop {
+				display: none;
+			}
+			.mobile {
+				display: block;
+			}
 		}
 
 		@include breakpoint('<=small') {
 			.content {
 				@include padding(3em, 2em);
+			}
+			.image {
+				img {
+					margin-bottom: 1em;
+				}
+			}
+			.desktop {
+				display: none;
 			}
 		}
 	}

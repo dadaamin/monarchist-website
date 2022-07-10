@@ -2150,6 +2150,9 @@ button,
   text-align: center;
   padding-bottom: 0.3em;
 }
+.spotlight .mobile {
+  display: none;
+}
 .spotlight:nth-child(2n) {
   -moz-flex-direction: row-reverse;
   flex-direction: row-reverse;
@@ -2191,6 +2194,9 @@ button,
   .spotlight .content {
     width: 45%;
   }
+  .spotlight .mobile {
+    display: none;
+  }
 }
 @media screen and (max-width: 980px) {
   .spotlight {
@@ -2202,16 +2208,31 @@ button,
   .spotlight .image {
     width: 100%;
   }
+  .spotlight .image img {
+    margin-bottom: 1em;
+  }
   .spotlight .content {
     padding: 4em 3em max(0.1rem, 4em - 6rem + 0) 3em;
     max-width: none;
     text-align: center;
     width: 100%;
   }
+  .spotlight .desktop {
+    display: none;
+  }
+  .spotlight .mobile {
+    display: block;
+  }
 }
 @media screen and (max-width: 736px) {
   .spotlight .content {
     padding: 3em 2em max(0.1rem, 3em - 6rem + 0) 2em;
+  }
+  .spotlight .image img {
+    margin-bottom: 1em;
+  }
+  .spotlight .desktop {
+    display: none;
   }
 }
 
