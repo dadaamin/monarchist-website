@@ -2101,7 +2101,6 @@
 				width: 100%;
 			}
 
-			@media (hover: none) {
 
 				&:before {
 					@include vendor('pointer-events', 'none');
@@ -2137,7 +2136,6 @@
 					opacity: 0.25;
 					z-index: 2;
 				}
-			}
 		}
 
 		> a {
@@ -2233,25 +2231,27 @@
 				background-color: _palette(accent6, bg);
 			}
 		}
+		@media only screen and (min-width: 992px) {
 
-		body:not(.is-touch) & {
-			&:hover {
-				> .image {
-					@include vendor('transform', 'scale(1.1)');
+			body:not(.is-touch) & {
+				&:hover {
+					> .image {
+						@include vendor('transform', 'scale(1.1)');
 
-					&:before {
-						background-color: _palette(bg-accent);
-						opacity: 0.35;
+						&:before {
+							background-color: _palette(bg-accent);
+							opacity: 0.35;
+						}
+
+						&:after {
+							opacity: 0;
+						}
 					}
 
-					&:after {
-						opacity: 0;
+					.content {
+						max-height: 15em;
+						opacity: 1;
 					}
-				}
-
-				.content {
-					max-height: 15em;
-					opacity: 1;
 				}
 			}
 		}
