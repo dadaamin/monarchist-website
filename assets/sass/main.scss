@@ -846,10 +846,6 @@
 			}
 		}
 
-		td {
-			padding: 0.75em 0.75em;
-		}
-
 		th {
 			color: _palette(fg-bold);
 			font-size: 0.9em;
@@ -1607,7 +1603,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		font-family: 'AT Triumvirate W03 Condensed';
+		font-family: 'Helvetica';
 
 		img {
 			@include vendor('transform', 'scale(1)');
@@ -1655,18 +1651,18 @@
 		div p {
 			margin: 6rem 0 0 0;
 			font-size: 34px;		
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: Helvetica;
 		}
 
 		div p {
 			margin: 6rem 0 0 0;
 			font-size: 34px;		
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: Helvetica;
 
 			@media only screen and (max-width: 600px) {
 				margin: 6rem 0 0 0;
 				font-size: 24px;		
-				font-family: AT Triumvirate W03 Condensed;
+				font-family: Helvetica;
 			
 			}
 		}
@@ -1804,7 +1800,7 @@
 		p {
 			margin-bottom: 1rem;
 			font-size: 44px;		
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: Helvetica;
 			color: #68c1ec;
 			font-weight: 500;
 		}
@@ -2078,7 +2074,7 @@
 
 		h2 {
 			font-size: 44px;
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: Helvetica;
 		}
 	}
 
@@ -2363,7 +2359,7 @@
 
 		h2 {
 			font-size: 44px;
-			font-family: AT Triumvirate W03 Condensed;
+			font-family: Helvetica;
 		}
 	}
 

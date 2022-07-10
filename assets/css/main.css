@@ -91,7 +91,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 body, input, select, textarea {
   color: #fff;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -1854,9 +1854,6 @@ table tbody tr {
   					background-color: _palette(border-bg);
   				} */
 }
-table td {
-  padding: 0.75em 0.75em;
-}
 table th {
   color: #fff;
   font-size: 0.9em;
@@ -2708,7 +2705,7 @@ body.is-menu-visible #menu {
   overflow: hidden;
   position: relative;
   text-align: center;
-  font-family: "AT Triumvirate W03 Condensed";
+  font-family: "Helvetica";
 }
 #banner img {
   transform: scale(1);
@@ -2750,18 +2747,18 @@ body.is-menu-visible #menu {
 #banner div p {
   margin: 6rem 0 0 0;
   font-size: 34px;
-  font-family: AT Triumvirate W03 Condensed;
+  font-family: Helvetica;
 }
 #banner div p {
   margin: 6rem 0 0 0;
   font-size: 34px;
-  font-family: AT Triumvirate W03 Condensed;
+  font-family: Helvetica;
 }
 @media only screen and (max-width: 600px) {
   #banner div p {
     margin: 6rem 0 0 0;
     font-size: 24px;
-    font-family: AT Triumvirate W03 Condensed;
+    font-family: Helvetica;
   }
 }
 #banner div a {
@@ -2883,7 +2880,7 @@ body.is-preload #banner:after {
 #video div.content p {
   margin-bottom: 1rem;
   font-size: 44px;
-  font-family: AT Triumvirate W03 Condensed;
+  font-family: Helvetica;
   color: #68c1ec;
   font-weight: 500;
 }
@@ -3122,7 +3119,7 @@ body.landing #footer {
 }
 .tiles header h2 {
   font-size: 44px;
-  font-family: AT Triumvirate W03 Condensed;
+  font-family: Helvetica;
 }
 .tiles article {
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -3332,7 +3329,7 @@ body.is-touch .tiles article .content {
 }
 .shows header h2 {
   font-size: 44px;
-  font-family: AT Triumvirate W03 Condensed;
+  font-family: Helvetica;
 }
 
 #spinner {
