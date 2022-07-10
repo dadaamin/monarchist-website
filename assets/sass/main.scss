@@ -2101,7 +2101,7 @@
 				width: 100%;
 			}
 
-			@media (min-width:1281px) {
+			@media (hover: none) {
 
 				&:before {
 					@include vendor('pointer-events', 'none');

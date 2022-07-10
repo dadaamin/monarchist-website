@@ -3140,7 +3140,7 @@ body.landing #footer {
   display: block;
   width: 100%;
 }
-@media (min-width: 1281px) {
+@media (hover: none) {
   .tiles article > .image:before {
     pointer-events: none;
     transition: background-color 0.5s ease, opacity 0.5s ease;
