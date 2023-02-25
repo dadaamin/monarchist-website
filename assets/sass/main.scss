@@ -1643,7 +1643,7 @@
 			position: relative;
 			z-index: 1;
 			vertical-align: top;
-			max-width: 100vw;
+			max-width: 50vw;
 
 			&:before, &:after {
 				@include vendor('transition', 'width 0.85s ease');
@@ -1667,6 +1667,12 @@
 			}
 		}
 
+		.content {
+			img {
+				max-height: 30vh;
+			}
+		}
+
 		p {
 			letter-spacing: _size(letter-spacing-alt);
 			text-transform: uppercase;
@@ -1685,12 +1691,12 @@
 		div p {
 			margin: 6rem 0 0 0;
 			font-size: 34px;		
-			font-family: Helvetica;
+			font-family: Berlin Sans FB Demi;
 
 			@media only screen and (max-width: 600px) {
 				margin: 6rem 0 0 0;
 				font-size: 24px;		
-				font-family: Helvetica;
+				font-family: Berlin Sans FB Demi;
 			
 			}
 		}
@@ -1907,7 +1913,7 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner.png");
+			background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/ntts/background.JPEG");
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -2044,7 +2050,7 @@
 
 	body.landing {
 		#page-wrapper {
-			background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner.png");
+			background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/ntts/background.JPEG");
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
