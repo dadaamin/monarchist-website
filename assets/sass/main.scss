@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import 'fontawesome-all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
 
 
 
@@ -71,7 +72,6 @@
 	}
 
 	table {
-		border-collapse: collapse;
 		border-spacing: 0;
 	}
 
@@ -95,6 +95,12 @@
 		-ms-appearance: none;
 		appearance: none;
 	}
+
+/* Change Selection Text Color When Highlighting */ 
+::-moz-selection { background-color: #b29e79; 
+	color: #fff; } 
+	::selection { background-color: #b29e79; 
+	color: #fff; }
 
 /* Basic */
 
@@ -187,6 +193,7 @@
 	h2 {
 		font-size: 1.35em;
 		line-height: 1.75em;
+		color: #b29e79;
 
 		@include breakpoint('<=small') {
 			font-size: 1.1em;
@@ -1055,7 +1062,6 @@
 	.spotlight {
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
-		padding-bottom: 1em;
 
 		.image {
 			@include vendor('order', '2');
@@ -1090,6 +1096,10 @@
 				hyphens: auto; 
 				text-align: justify;
 				line-height: 1.5;
+			}
+
+			tr:first-child {
+				font-style: italic;
 			}
 
 			td {
@@ -1675,7 +1685,6 @@
 
 		p {
 			letter-spacing: _size(letter-spacing-alt);
-			text-transform: uppercase;
 
 			a {
 				color: inherit;
@@ -1691,12 +1700,12 @@
 		div p {
 			margin: 6rem 0 0 0;
 			font-size: 34px;		
-			font-family: Berlin Sans FB Demi;
+			font-family: 'Berlin Sans FB', sans-serif;
 
 			@media only screen and (max-width: 600px) {
 				margin: 6rem 0 0 0;
 				font-size: 24px;		
-				font-family: Berlin Sans FB Demi;
+				font-family: 'Berlin Sans FB', sans-serif;
 			
 			}
 		}
@@ -1819,9 +1828,6 @@
 
 	video {
 		display: block;
-		margin: auto;
-
-		
 	}
 
 	div.content {
@@ -1834,7 +1840,7 @@
 		p {
 			margin-bottom: 1rem;
 			font-size: 44px;		
-			font-family: Helvetica;
+			font-family: 'Berlin Sans FB', sans-serif;
 			color: #68c1ec;
 			font-weight: 500;
 		}
@@ -2061,15 +2067,11 @@
 		
 	@media only screen and (max-width: 320px) {
 		/* Small screen, non-retina */
-		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner_mobile_290.png"); }
+		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/ntts/background_290.png"); }
 	}
 	@media only screen and (min-width: 321px) and (max-width: 540px) {
 		/* Medium screen, non-retina */
-		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner_mobile_540.png"); }
-	}
-	@media only screen and (min-width: 541) and (max-width: 811px) {
-		/* Medium screen, non-retina */
-		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/banner_mobile_810.png"); }
+		#page-wrapper { background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url("../../images/ntts/background_540.png"); }
 	}
 
 		#footer {
@@ -2365,7 +2367,7 @@
 	table {
 		width: 80%;
 		border: none;
-		background-color: rgba(22, 26, 29, 0.7);
+		background-color: rgba(0, 0, 0, 0.3);
 		table-layout: fixed;
 		margin-left: auto;
   		margin-right: auto;
