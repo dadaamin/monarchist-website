@@ -93,12 +93,12 @@
 		console.log(mainVideo)
 
 		if ( $(window).width() < 400 && $(window).height() < 901) {
-		mainVideo.append("<source type='video/mp4' src='images/music_video_900.mp4'/>");
+		mainVideo.append("<source type='video/mp4' src='images/video_mobile.mp4'/>");
 		} else if  ( $(window).width() < 501 && $(window).height() < 1081) {
-			mainVideo.append("<source type='video/mp4' src='images/music_video_1080.mp4'/>");
+			mainVideo.append("<source type='video/mp4' src='images/ntts/video_mobile.mp4'/>");
 		} 
 		else {
-		mainVideo.append("<source type='video/mp4' src='images/music_video.mp4' />");
+		mainVideo.append("<source type='video/mp4' src='images/ntts/video.mp4' />");
 		}
 
 		$(window).bind('beforeunload', function() {
