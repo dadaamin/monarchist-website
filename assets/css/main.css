@@ -3110,7 +3110,7 @@ body.landing #page-wrapper {
     /* Small screen, non-retina */
   }
   body.landing #page-wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/ntts/background_290.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/mary/background.png");
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
@@ -3118,7 +3118,7 @@ body.landing #page-wrapper {
     /* Medium screen, non-retina */
   }
   body.landing #page-wrapper {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/ntts/background_540.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/mary/background.png");
   }
 }
 body.landing #footer {
