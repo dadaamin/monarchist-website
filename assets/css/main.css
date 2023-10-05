@@ -2915,7 +2915,7 @@ body.is-preload #banner:after {
 #video div.content p {
   margin-bottom: 1rem;
   font-size: 44px;
-  font-family: "Heavy Heap", sans-serif;
+  font-family: "Berlin Sans FB", sans-serif;
   color: #b29e79;
   font-weight: 500;
 }
@@ -3443,4 +3443,29 @@ body.is-touch .tiles article .content {
 }
 #spinner .ldio-se93k9o5zk div {
   box-sizing: content-box;
+}
+
+#cross {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 0.01rem #e19495);
+  }
+  to {
+    filter: drop-shadow(0 0 0.15rem #e19495);
+  }
+}
+#landing p {
+  color: #e19495;
+}
+
+#landing .button {
+  color: #e19495;
+  box-shadow: inset 0 0 0 2px #e19495;
+}
+
+.more::after {
+  filter: invert(68%) sepia(15%) saturate(1102%) hue-rotate(309deg) brightness(99%) contrast(78%);
 }/*# sourceMappingURL=main.css.map */
