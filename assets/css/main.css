@@ -1,6 +1,7 @@
 @import 'fontawesome-all.min.css';
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 @import url("https://fonts.cdnfonts.com/css/berlin-sans-fb");
+@import url("https://fonts.cdnfonts.com/css/heavy-heap");
 /*
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -2787,13 +2788,13 @@ body.is-menu-visible #menu {
 #banner div p {
   margin: 6rem 0 0 0;
   font-size: 34px;
-  font-family: "Berlin Sans FB", sans-serif;
+  font-family: "Heavy Heap", sans-serif;
 }
 @media only screen and (max-width: 600px) {
   #banner div p {
     margin: 6rem 0 0 0;
     font-size: 24px;
-    font-family: "Berlin Sans FB", sans-serif;
+    font-family: "Heavy Heap", sans-serif;
   }
 }
 #banner div a {
@@ -2914,7 +2915,7 @@ body.is-preload #banner:after {
 #video div.content p {
   margin-bottom: 1rem;
   font-size: 44px;
-  font-family: "Berlin Sans FB", sans-serif;
+  font-family: "Heavy Heap", sans-serif;
   color: #b29e79;
   font-weight: 500;
 }
@@ -2977,7 +2978,7 @@ body.is-preload #banner:after {
 /* Main */
 #main > header {
   padding: 12em 0 max(0.1rem, 12em - 6rem + 0) 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/ntts/background.JPEG");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/mary/background.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3097,7 +3098,7 @@ body.is-mobile #main > header {
 }
 /* Landing */
 body.landing #page-wrapper {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/ntts/background.JPEG");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/mary/background.png");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3437,8 +3438,7 @@ body.is-touch .tiles article .content {
   height: 100%;
   position: relative;
   transform: translateZ(0) scale(1);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform-origin: 0 0; /* see note above */
 }
 #spinner .ldio-se93k9o5zk div {
