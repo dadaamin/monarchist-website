@@ -3459,12 +3459,12 @@ body.is-touch .tiles article .content {
   }
 }
 #landing p {
-  color: #9e1914;
+  color: #FFFFFF;
 }
 
 #landing .button {
-  color: #9e1914;
-  box-shadow: inset 0 0 0 2px #9e1914;
+  color: #FFFFFF;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
 }
 
 .more::after {
