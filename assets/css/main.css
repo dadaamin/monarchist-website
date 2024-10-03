@@ -2791,13 +2791,13 @@ body.is-menu-visible #menu {
 #banner div p {
   margin: 6rem 0 0 0;
   font-size: 34px;
-  font-family: "The+Seasons+Bold", sans-serif;
+  font-family: "fathers";
 }
 @media only screen and (max-width: 600px) {
   #banner div p {
     margin: 6rem 0 0 0;
     font-size: 24px;
-    font-family: "The+Seasons+Bold", sans-serif;
+    font-family: "fathers";
   }
 }
 #banner div a {
