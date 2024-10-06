@@ -2855,8 +2855,6 @@ body.is-menu-visible #menu {
 @media screen and (max-width: 736px) {
   #banner {
     padding: 7em 3em max(0.1rem, 7em - 6rem + 0) 3em;
-    height: auto;
-    min-height: 0;
   }
   #banner h2 {
     font-size: 1.25em;
